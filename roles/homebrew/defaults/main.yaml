@@ -1,0 +1,27 @@
+---
+homebrew_packages:
+  - sqlite
+  - awscli
+  - git
+  - wget
+  - nvm
+  - node
+  - pyenv
+
+homebrew_casks:
+  - balenaetcher
+  - bitwarden
+  - db-browser-for-sqlite
+  - discord
+  - docker
+  - dockutil
+  - hyper
+  - kitty
+  - numi
+  - postman
+  - powershell
+  - slack
+  - visual-studio-code
+
+update_poetry: true
+poetry_venv_in_project: true
