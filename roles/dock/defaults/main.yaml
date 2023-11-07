@@ -1,0 +1,65 @@
+---
+dockitems_remove:
+  - Launchpad
+  - Safari
+  - Mail
+  - Messages
+  - Maps
+  - Photos
+  - FaceTime
+  - Music
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - TV
+  - News
+  - App\ Store
+  - Podcasts
+  - Numbers
+  - Keynote
+  - Pages
+
+dockitems_add:
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: "Bear"
+    path: "/Applications/Bear.app"
+    pos: 2
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+    pos: 3
+  - name: "Postman"
+    path: "/Applications/Postman.app"
+    pos: 4
+  - name: "Bitwarden"
+    path: "/Applications/Bitwarden.app"
+    pos: 5
+  - name: "kitty"
+    path: "/Applications/kitty.app"
+    pos: 6
+  - name: "Hyper"
+    path: "/Applications/Hyper.app"
+    pos: 7
+  - name: "Numi"
+    path: "/Applications/Numi.app"
+    pos: 8
+  - name: "Spotify"
+    path: "/Applications/Spotify.app"
+    pos: 9
+  - name: "Slack"
+    path: "/Applications/Slack.app"
+    pos: 10
+  - name: "Discord"
+    path: "/Applications/Discord.app"
+    pos: 11
+  - name: "Docker Desktop"
+    path: "/Applications/Docker.app"
+    pos: 12
+  - name: "System Settings"
+    path: "/Applications/System Settings.app"
+    pos: 13
+
+dockutil_homebrew_cask: hpedrorodrigues/tools/dockutil
+dockutil_install: true
