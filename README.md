@@ -13,3 +13,22 @@ Ansible scripts to build/configure a new Mac for development
 4. Configure the defaults in this project to ensure that the Mac setup is to your liking (They can be found in the main.yaml files in the defaults directory for each role)
 5. From the root directory of this repository, run the playbook:
     > ansible-playbook main.yaml
+
+Wallpapers:
+
+https://github.com/dharmx/walls/blob/main/apocalypse/kanistra-studio-8-unicorn.jpg
+
+Install Oh my ZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+## To Do:
+
+* Download wallpaper & Set it: https://github.com/dharmx/walls/blob/main/apocalypse/kanistra-studio-8-unicorn.jpg
+* Install Oh My ZSH 
+  > sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+* Configure Kitty Config
+* Install Yabai & Configure
+* Install Skhd & Configure
+* In home directory
+  > touch .hushlogin
+* Install & Configure Neovim (just install nvchad for now https://nvchad.com/docs/quickstart/install)
