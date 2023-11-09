@@ -1,0 +1,44 @@
+---
+- name: Tap homebrew
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ homebrew_taps }}"
+
+- name: Install Homebrew formulae
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ homebrew_formulae }}"
+
+- name: Make ~/.config/sketchybar directory
+  file:
+    path: ~/.config/sketchybar
+    state: directory
+    mode: 0755
+  tags: ["sketchybar"]
+
+- name: Copy sketchybarrc file to ~/.config/sketchybar
+  copy:
+    src: files/sketchybarrc
+    dest: ~/.config/sketchybar/sketchybarrc
+    mode: 0644
+  tags: ["sketchybar"]
+
+- name: Clone sketchybar repo
+  git:
+    repo: 'https://github.com/FelixKratz/SketchyBar.git'
+    dest: ~/code/SketchyBar
+
+- name: Copy plugins from sketchybar repo to ~/.config/sketchybar
+  copy:
+    src: ~/code/SketchyBar/plugins
+    dest: ~/.config/sketchybar
+    mode: 0755
+  tags: ["sketchybar"]
+
+- name: Start sketchybar service
+  command: brew services start sketchybar
+
+- name: Start Janky borders service
+  command: brew services start borders

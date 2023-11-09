@@ -8,8 +8,9 @@ homebrew_packages:
   - nvm
   - node
   - pyenv
+  - neovim
 
-homebrew_casks:
+homebrew_applications:
   - balenaetcher
   - bitwarden
   - db-browser-for-sqlite
@@ -23,6 +24,12 @@ homebrew_casks:
   - powershell
   - slack
   - visual-studio-code
+
+homebrew_taps:
+  - homebrew/cask-fonts
+
+homebrew_casks:
+  - font-hack-nerd-font
 
 update_poetry: true
 poetry_venv_in_project: true

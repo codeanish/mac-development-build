@@ -6,10 +6,22 @@
   loop: "{{ homebrew_packages }}"
   tags: ["homebrew"]
 
-- name: Install homebrew casks
+- name: Install homebrew Applications
   homebrew_cask:
     name: "{{ item }}"
     state: present
     install_options: ['--appdir=/Applications']
     accept_external_apps: true
+  loop: "{{ homebrew_applications }}"
+
+- name: Tap homebrew
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ homebrew_taps }}"
+
+- name: Install Homebrew casks
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
   loop: "{{ homebrew_casks }}"

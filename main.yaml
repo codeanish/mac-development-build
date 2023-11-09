@@ -3,4 +3,5 @@
 
   roles:
     - role: homebrew
+    - role: rice
     - role: dock
