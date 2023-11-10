@@ -9,6 +9,8 @@ homebrew_packages:
   - node
   - pyenv
   - neovim
+  - neofetch
+  - zsh-autocomplete
 
 homebrew_applications:
   - balenaetcher
