@@ -26,6 +26,7 @@ homebrew_applications:
   - powershell
   - slack
   - visual-studio-code
+  - jordanbaird-ice
 
 homebrew_taps:
   - homebrew/cask-fonts
