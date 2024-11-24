@@ -1,6 +1,0 @@
-homebrew_taps:
-  - codeanish/formulae
-
-homebrew_formulae:
-  - sketchybar
-  - borders

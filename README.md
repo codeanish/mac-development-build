@@ -23,12 +23,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## To Do:
 
-* Download wallpaper & Set it: https://github.com/dharmx/walls/blob/main/apocalypse/kanistra-studio-8-unicorn.jpg
 * Install Oh My ZSH 
   > sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 * Configure Kitty Config
-* Install Yabai & Configure
-* Install Skhd & Configure
-* In home directory
-  > touch .hushlogin
 * Install & Configure Neovim (just install nvchad for now https://nvchad.com/docs/quickstart/install)
